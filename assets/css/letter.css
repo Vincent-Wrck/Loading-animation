@@ -1,0 +1,133 @@
+.txtAnim {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    height: 20vh;
+    letter-spacing: 20px;
+    font-weight: 300;
+    font-size: 60px;
+    color: #F2F2F2;
+}
+
+.txtHeader {
+    margin:0;
+
+}
+
+.letterOpacity {
+    animation: 1.6s letterOpacity infinite alternate;
+    transform-origin: center;
+}
+
+.letterScale {
+    display: inline-block;
+    animation: letterScale 2.6s infinite ease-out;
+    transform: scale(0.5);
+    opacity: 0.5
+}
+
+.letterOpacity:nth-of-type(2) {
+    animation-delay: 0.2s
+}
+
+.letterOpacity:nth-of-type(3) {
+    animation-delay: 0.4s
+}
+
+.letterOpacity:nth-of-type(4) {
+    animation-delay: 0.6s
+}
+
+.letterOpacity:nth-of-type(5) {
+    animation-delay: 0.8s
+}
+
+.letterOpacity:nth-of-type(6) {
+    animation-delay: 1s
+}
+
+.letterOpacity:nth-of-type(7) {
+    animation-delay: 1.2s
+}
+
+
+.letterScale:nth-last-of-type(8) {
+    animation-delay: 0.2s;
+
+}
+
+.letterScale:nth-last-of-type(7) {
+    animation-delay: 0.4s
+}
+
+.letterScale:nth-last-of-type(6) {
+    animation-delay: 0.6s
+}
+
+.letterScale:nth-last-of-type(5) {
+    animation-delay: 0.8s
+}
+
+.letterScale:nth-last-of-type(4) {
+    animation-delay: 1s
+}
+
+.letterScale:nth-last-of-type(3) {
+    animation-delay: 1.2s
+}
+
+.letterScale:nth-last-of-type(2) {
+    animation-delay: 1.4s;
+
+}
+
+.letterScale:nth-last-of-type(1) {
+    animation-delay: 1.6s;
+
+}
+
+@keyframes letterOpacity {
+
+    100% {
+        opacity: 0.1;
+
+    }
+
+}
+
+@keyframes letterScale {
+
+    25% {
+
+        transform: scale(0.4);
+        opacity: 0.4
+    }
+
+    50% {
+
+        transform: scale(0.4);
+        opacity: 0.4
+    }
+
+    70% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    70% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    95% {
+
+        transform: scale(1);
+        opacity: 1
+    }
+
+    100% {
+
+        transform: scale(1.1);
+        opacity: 1
+    }
+}

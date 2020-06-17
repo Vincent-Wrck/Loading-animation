@@ -1,0 +1,88 @@
+/* Color Theme Swatches in Hex */
+/*
+.MJW&P-1-hex { color: #590202; }
+.MJW&P-2-hex { color: #260101; }
+.MJW&P-3-hex { color: #D91111; }
+.MJW&P-4-hex { color: #F22727; }
+.MJW&P-5-hex { color: #F2F2F2; }
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    background: #F22727;
+    font-family: 'Jost', sans-serif;
+    height: 300vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border:solid 5px #F2F2F2;
+    margin:5px;
+
+}
+
+#header {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+#svgDotLoading {
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+#svgCircleLineLoading {
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+
+#topRetunr {
+
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+
+}
+
+.arrowNavWrap {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.arrowNav {
+
+    fill: none;
+    stroke: #F2F2F2;
+    stroke-width: 2px;
+
+}
+
+.arrowNavUp {
+
+    fill: none;
+    stroke: #F2F2F2;
+    stroke-width: 2px;
+    transform-origin: center;
+    transform: rotate(180deg);
+
+}

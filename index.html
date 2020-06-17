@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/verticalLoading.css">
+    <link rel="stylesheet" href="assets/css/horizontalLoading.css">
+    <link rel="stylesheet" href="assets/css/letter.css">
+    <link rel="stylesheet" href="assets/css/circlepathLoading.css">
+    <link rel="stylesheet" href="assets/css/circleLine.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="topReturn"></div>
+        <div id="header">
+            <div class="txtheader">
+                <p class=txtAnim>
+                    <span class='letterOpacity'>I</span>
+                    <span class='letterOpacity'>n</span>
+                    <span class='letterOpacity'>f</span>
+                    <span class='letterOpacity'>i</span>
+                    <span class='letterOpacity'>n</span>
+                    <span class='letterOpacity'>i</span>
+                    <span class='letterOpacity'>t</span>
+                </p>
+
+                <p class=txtAnim>
+                    <span class="letterScale">L</span>
+                    <span class="letterScale">o</span>
+                    <span class="letterScale">a</span>
+                    <span class="letterScale">d</span>
+                    <span class="letterScale">i</span>
+                    <span class="letterScale">n</span>
+                    <span class="letterScale">g</span>
+                </p>
+                <div class="arrowNavWrap">
+                    <a href="#svgDotLoading">
+                        <svg viewBox="0 0 100 100" width="100px" height="100px">
+                            <polygon class="arrowNav" points="67.002,57.5 50.779,84 34.555,57.5 " />
+                            <circle class="arrowNav" cx="50.528" cy="48.93" r="45" />
+                            <line class="arrowNav" x1="50.5" y1="58" x2="50.5" y2="14" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="svgDotLoading">
+            <div class="horizontalLoading">
+                <svg viewbox='0 0 100 100' width='200' height='200'>
+                    <circle class='horizontalLoader' r='4'></circle>
+                    <circle class='horizontalLoader' r='4'></circle>
+                    <circle class='horizontalLoader' r='4'></circle>
+                    <circle class='horizontalLoader' r='4'></circle>
+                </svg>
+            </div>
+            <div class="verticalLoading">
+                <svg viewbox='0 0 100 100' width='200' height='200'>
+                    <circle class='verticalLoader' r='4'></circle>
+                    <circle class='verticalLoader' r='4'></circle>
+                    <circle class='verticalLoader' r='4'></circle>
+                </svg>
+            </div>
+
+            <div class="circularLoading">
+                <svg viewbox='0 0 100 100' width='200' height='200'>
+                    <circle class="circleLoader" r='2'></circle>
+                    <circle class="circleLoader" r='4'></circle>
+                    <circle class="circleLoader" r='4'></circle>
+                    <circle class="circleLoader" r='2'></circle>
+                </svg>
+            </div>
+
+        </div>
+        <div class="arrowNavWrap">
+            <a href="#topReturn">
+                <svg viewBox="0 0 100 100" width="100px" height="100px">
+                    <polygon class="arrowNavUp" points="67.002,57.5 50.779,84 34.555,57.5 " />
+                    <circle class="arrowNavUp" cx="50.528" cy="48.93" r="45" />
+                    <line class="arrowNavUp" x1="50.5" y1="58" x2="50.5" y2="14" />
+                </svg>
+            </a>
+            <a href="#svgCircleLineLoading">
+                <svg viewBox="0 0 100 100" width="100px" height="100px">
+                    <polygon class="arrowNav" points="67.002,57.5 50.779,84 34.555,57.5 " />
+                    <circle class="arrowNav" cx="50.528" cy="48.93" r="45" />
+                    <line class="arrowNav" x1="50.5" y1="58" x2="50.5" y2="14" />
+                </svg>
+            </a>
+        </div>
+        <div id="svgCircleLineLoading">
+            <div class="circleLineLoad">
+                <svg viewbox='0 0 100 100' width='200' height='200'>
+                    <circle class="circleLineLoader" cx='50' cy='50' r='10'></circle>
+                    <circle class="circleLineLoader" cx='50' cy='50' r='20'></circle>
+                    <circle class="circleLineLoader" cx='50' cy='50' r='30'></circle>
+                    <circle class="circleLineLoader" cx='50' cy='50' r='40'></circle>
+                </svg>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="assets/Jquery/main.js"></script>
+    </div>
+
+</body>
+
+</html>

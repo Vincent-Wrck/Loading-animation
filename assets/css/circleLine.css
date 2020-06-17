@@ -1,0 +1,89 @@
+.circleLineLoad {
+
+    margin: 100px;
+    border: solid 2px #F2F2F2;
+
+}
+
+
+.circleLineLoader {
+
+    stroke: #F2F2F2;
+    fill: none;
+    stroke-dasharray: 500 500;
+    stroke-dashoffset: 200;
+    transform-origin: center;
+    animation: circleLineLoader 1.7s infinite alternate;
+
+}
+
+.circleLineLoader:nth-of-type(2) {
+
+    animation-delay: 0.3s;
+    /* stroke: blue;*/
+    stroke-dasharray: 40 20;
+    stroke-dashoffset: 100;
+    animation: circleLineLoaderDash 1.8s infinite alternate-reverse;
+
+}
+
+.circleLineLoader:nth-of-type(3) {
+
+    animation-delay: 0.6s;
+    animation-direction: alternate-reverse;
+
+}
+
+.circleLineLoader:nth-of-type(4) {
+
+    animation-delay: 0.9s;
+    stroke-dasharray: 40 20;
+    stroke-dashoffset: 100;
+    animation: circleLineLoaderDash 1.6s infinite alternate;
+}
+
+@keyframes circleLineLoaderDash {
+
+    40% {
+
+        stroke-dasharray: 40 20;
+        stroke-dashoffset: 50;
+        transform: scale(0.3);
+    }
+
+    60% {
+
+        stroke-dasharray: 40 20;
+        stroke-dashoffset: -20;
+        transform: scale(1.9);
+    }
+
+    100% {
+        
+        stroke-dasharray: 40 20;
+        stroke-dashoffset: -150;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes circleLineLoader {
+
+    40% {
+        
+        stroke-dashoffset: 0;
+        transform: scale(1.5);
+    }
+
+    60% {
+        
+        stroke-dashoffset: -20;
+        transform: scale(0.2);
+    }
+
+    100% {
+        
+        stroke-dashoffset: -200;
+        transform: scale(1);
+    }
+}
